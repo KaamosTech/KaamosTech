@@ -1,0 +1,50 @@
+html,
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #00c2ff;
+}
+
+footer {
+  width: 100%;
+  height: 40%;
+  background: #00c2ff;
+  color: #fff;
+}
+
+.sns_icon {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns_icon img {
+  width: 80px;
+  margin: 20px;
+}
+
+.sns_icon img:hover {
+  opacity: 0.5;
+}
+
+.copyright {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    height: 30%;
+  }
+
+  .sns_icon img {
+    width: 50px;
+  }
+}

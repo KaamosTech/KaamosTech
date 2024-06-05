@@ -1,0 +1,28 @@
+.back_btn{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back_btn a{
+    width: 100%;
+    height: 50px;
+    color: #00C2FF;
+    border: none;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.back_btn a:hover{
+    opacity: 0.5;
+}
+
+.back_btn img{
+    width: 25px;
+    margin-left: 5px;
+}

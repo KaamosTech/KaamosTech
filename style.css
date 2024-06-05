@@ -1,0 +1,318 @@
+html,
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #00c2ff;
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+article {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top {
+  margin-top: 60px;
+}
+
+.top img {
+  width: 100%;
+}
+
+.top_title {
+  position: absolute;
+  width: 40%;
+  height: 8%;
+  bottom: 10%;
+}
+
+.top_title div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #00c2ff;
+  opacity: 0.5;
+  box-shadow: 5px 5px 5px #666;
+}
+
+.top p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: fff;
+  bottom: -15px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.notice_title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.scroll_area {
+  width: 70%;
+  height: 300px;
+  background: #fff;
+  border: solid #c6c6c6;
+  margin: 0 auto;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 20px 30px;
+}
+
+.scroll_area a {
+  display: block;
+  color: #00c2ff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.scroll_area a:hover {
+  opacity: 0.5;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title p {
+  width: 40%;
+  height: 50px;
+  background: #00c2ff;
+  color: #fff;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #d9d9d9;
+}
+
+.notice,
+.product,
+.members {
+  padding-top: 100px;
+}
+
+.product_content {
+  border-spacing: 50px;
+}
+
+.product_content tr {
+  width: 100%;
+}
+
+.product_content td {
+  width: 200px;
+  height: 200px;
+}
+
+.product_content button {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 5px #d9d9d9;
+  text-align: center;
+  font-size: 30px;
+  background: #fff;
+  border: none;
+  color: #00c2ff;
+}
+
+.product_content p {
+  font-size: 15px;
+}
+
+.product_content button:hover {
+  opacity: 0.5;
+}
+
+.sp_product_content {
+  display: none;
+}
+
+.youtube button {
+  background-image: url("images/youtube.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.member {
+  border-spacing: 50px;
+}
+
+.member_name {
+  font-size: 25px;
+}
+
+.member td {
+  width: 50%;
+  height: 300px;
+  text-align: center;
+}
+
+.member td button {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: solid 2px #00c2ff;
+  padding: 20px;
+  color: #00c2ff;
+}
+
+.member td button:hover {
+  opacity: 0.5;
+}
+
+.member td img {
+  width: 80%;
+  aspect-ratio: 2/1;
+}
+
+.member_work {
+  font-size: 18px;
+}
+
+.work_btn {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_btn button {
+  width: 30%;
+  height: 50px;
+  background: #00c2ff;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  box-shadow: 5px 5px 5px #d9d9d9;
+}
+
+.work_btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.work_btn button:hover {
+  opacity: 0.5;
+}
+
+/* タブレット */
+@media only screen and (min-width: 481px) and (max-width: 1280px) {
+  .top_title {
+    width: 50%;
+  }
+}
+
+/* モバイル */
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .top_title {
+    width: 50%;
+  }
+
+  .top p {
+    bottom: -5px;
+    font-size: 25px;
+  }
+
+  .title p {
+    width: 90%;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .notice,
+  .product,
+  .members {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .notice_title {
+    font-size: 18px;
+  }
+
+  .scroll_area {
+    width: 90%;
+    height: 200px;
+    padding: 5px 10px;
+  }
+
+  .product_content {
+    display: none;
+  }
+
+  .sp_product_content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-spacing: 20px;
+  }
+
+  .sp_product_content tr {
+    width: 100%;
+  }
+
+  .sp_product_content td {
+    width: 150px;
+    height: 150px;
+  }
+
+  .sp_product_content button {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px #d9d9d9;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border: none;
+    color: #00c2ff;
+  }
+
+  .sp_product_content p {
+    font-size: 10px;
+  }
+
+  .sp_product_content button:hover {
+    opacity: 0.5;
+  }
+
+  .member {
+    border-spacing: 20px;
+  }
+
+  .member td {
+    width: 150px;
+    height: 150px;
+  }
+
+  .member td img {
+    width: 100%;
+  }
+
+  .member_work {
+    font-size: 14px;
+  }
+
+  .work_btn button {
+    width: 300px;
+  }
+
+  .work_btn a {
+    font-size: 18px;
+  }
+}
